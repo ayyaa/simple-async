@@ -7,18 +7,16 @@ fs.writeFile(path.join(path.dirname(__filename), 'message.txt'), 'Hello Tsurayya
 });
 
 fs.rename('serial.txt', 'serial-dua.txt', function (error) {
-	fs.readFile(path.join(path.dirname(__filename), 'serial-dua.txt'), 'utf8', function (error, contents) {
-		console.log(contents);
+  fs.readFile(path.join(path.dirname(__filename), 'serial-dua.txt'), 'utf8', function (error, contents) {
+    console.log(contents);
     });
 });
 
-fs.readFile(path.join(path.dirname(__filename), 'simple.txt'),'utf8', function (error, contents) {
-	console.log(contents);
+fs.readFile(path.join(path.dirname(__filename), 'simple.txt'), 'utf8', function (error, contents) {
+  console.log(contents);
 });
 
-
-
 fs.readFile(path.join(path.dirname(__filename), 'message.txt'), 'utf8', function (error, contents) {
-	console.log(contents);
+  console.log(contents);
 });
 
